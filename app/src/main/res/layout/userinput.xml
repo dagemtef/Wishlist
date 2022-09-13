@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/storeInput"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="50dp"
+        android:hint="Store Website"
+        android:text=""
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemInput" />
+
+    <EditText
+        android:id="@+id/itemInput"
+        android:layout_width="250dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="100dp"
+        android:hint="Item Name"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/priceInput"
+        android:layout_width="80dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="100dp"
+        android:hint="Price"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="87dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="50dp"
+        android:text="Submit"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceInput" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler2"
+        android:layout_width="395dp"
+        android:layout_height="517dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/itemInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
